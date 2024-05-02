@@ -1,0 +1,35 @@
+.hero-section,
+.footer,
+.navbar {
+  background: linear-gradient(to bottom, #343a40, #212529);
+}
+.nav-link {
+  border-radius: 2vh;
+  transition: background-color 0.5s ease, color 0.5s ease,
+    border-color 0.5s ease;
+}
+.active {
+  color: #fff !important;
+  background-color: #0d6efd !important;
+  border-color: #0d6efd !important;
+}
+.nav-link:hover {
+  color: #fff !important;
+}
+
+.search-field {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 90%;
+    transform: translateX(-50%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 9999;
+}
+
+.search-field.activeSearch {
+    display: block;
+}
